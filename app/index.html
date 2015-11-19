@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/default.css">
+  <title>Admin</title>
+</head>
+
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="bower_components/jquery-ui/ui/minified/i18n/datepicker-ko.min.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/a0-angular-storage/dist/angular-storage.js"></script>
+
+<script src="js/ui.js"></script>
+<script src="app.module.js"></script>
+<script src="app.route-config.js"></script>
+<script src="app.constants.js"></script>
+<script src="app.config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/test.js"></script>
+
+
+<body ng-app="app">
+<span us-spinner="{lines: 9, length: 8, width: 3, radius: 5}"></span>
+
+<ul class="skipNavi">
+  <li><a href="#contents">본문 바로가기</a></li>
+  <li><a href="#gnb">주메뉴 바로가기</a></li>
+</ul>
+
+<div class="totalWrap">
+  <div>
+    <!-- header -->
+    <header class="header">
+      <div class="inner">
+        <h1><a href="#" ui-sref="home" ui-sref-opts="{reload: true}">Curation Admin</a></h1>
+        <nav class="gnb">
+          <ul class="depth1">
+            <li class="d1">
+              <a href="#" ui-sref="admin">Curation Admin</a>
+              <ul class="depth2">
+                <li class="d2"><a href="#" ui-sref="listTest">메뉴1</a></li>
+                <li class="d2"><a href="#">메뉴2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  <!-- //header -->
+
+  <!-- Container -->
+  <div class="container">
+
+    <!-- Contents -->
+    <div class="contents">
+
+      <div id="wrapper">
+        <div id="container">
+
+          <!-- lnb/contents -->
+          <div id="content" class="clear" ui-view>
+          </div>
+          <!-- lnb/contents -->
+
+        </div>
+      </div>
+
+    </div>
+    <!-- //Contents -->
+
+    <footer class="footer">
+      <h2 class="logo">Admin UI</h2>
+      <ul>
+        <li><a href="#">사이트맵</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보 취급방침</a></li>
+      </ul>
+      <span class="copy">&copy; KT. All Rights reserved.</span>
+    </footer>
+
+  </div>
+  <!-- //Container -->
+
+</div>
+</div>
+
+
+</body>
+</html>

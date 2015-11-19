@@ -1,0 +1,13 @@
+@font-face{ 
+	font-family: 'NanumGothic';
+	font-style: normal; 
+	font-weight: normal; 
+	src: url('/images/ko/font/NanumGothic.eot'); 
+	src: local('?'), url('/images/ko/font/NanumGothic.woff') format('woff'), url('/images/ko/font/NanumGothic.ttf') format('truetype'); }
+
+@font-face{ 
+	font-family: 'NanumGothicBold';
+	font-style: normal; 
+	font-weight: normal; 
+	src: url('/images/ko/font/NanumGothicBold.eot'); 
+	src: local('?'), url('/images/ko/font/NanumGothicBold.woff') format('woff'), url('/images/ko/font/NanumGothicBold.ttf') format('truetype'); }
